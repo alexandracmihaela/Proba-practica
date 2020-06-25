@@ -1,4 +1,3 @@
-import paho.mqtt.publish as mqtt
 import RPi.GPIO as GPIO
 import paho.mqtt.client as mqtt
 import json
