@@ -42,10 +42,9 @@ def on_detect_sensor(fTopic, fPayload):
     
 while True:
     if GPIO.event_detected(channel):
+        value = GPIO.input(channel)
         payload = {"SENSOR" : value}
-        basic_string = "valoare"
-        save_local(basic_string)
-        
+        save_local(value)
         on_detect_sensor(mTopic, payload)
         time.sleep(1) 
 
