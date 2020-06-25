@@ -5,7 +5,6 @@ import time
 
 logfile = "/home/pi/Desktop/Noaje-Alexandra/data.txt"
 
-qos = 0
 mHost = "mqtt.beia-telemetrie.ro"
 mTopic = "/training/rpi/alexandra-noaje"
 mUser = ""
