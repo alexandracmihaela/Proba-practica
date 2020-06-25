@@ -21,11 +21,9 @@ def local_save(data):
 
 def on_connect(client, userdata, flags, rc):
     if(rc==0):
-        print("Connected to broker")
-        global Connected
+        print("Connected OK.")
     else:
-        print("Connected failed")
-Connected = False
+        print("Bad connection.")
 
 mqttc = mqtt.Client()
 
